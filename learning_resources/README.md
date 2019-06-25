@@ -3,7 +3,7 @@
 
 （:star: 标记为强烈推荐学习的材料。以下的这些资料不可能（也没必要）短时间内全部看完，先挑重点学习。）
 
-##课程资源
+## 课程资源
 * [CS229 Machine Learning (Stanford University)](https://see.stanford.edu/Course/CS229) :star:
 
   Andrew Ng的Handouts (cs229.zip)一定要看，可以自己去网上找对应的课程视频。
@@ -47,7 +47,7 @@
   
 
 ----
-##阅读资料
+## 阅读资料
 * [机器学习 周志华](https://book.douban.com/subject/26708119/) :star:
 
   经典的西瓜书，机器学习入门的经典中文资料
