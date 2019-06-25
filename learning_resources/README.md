@@ -38,7 +38,7 @@
 
   关于对抗机器学习的课程，slides推荐学习。
 
-* [Calling Bullshit--Data Reasoning in a Digital World (University of Washington)](https://callingbullshit.org)
+* [Calling Bullshit--Data Reasoning in a Digital World (University of Washington)](https://callingbullshit.org)
 
   数据会说谎！课程不涉及太多的理论知识，通过很多有趣的例子帮助大家理解数据分析/表达上存在的一些误区/误导。希望大家看完以后自身可以避免类似的错误，同时能够判断其他人在数据呈现中可能隐藏的陷阱。
 
