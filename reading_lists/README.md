@@ -187,6 +187,11 @@
 1. [Interpretable Deep Learning under Fire (USENIX '20)](https://arxiv.org/abs/1812.00891)
 
    欺骗模型解释方法的对抗样本
+
+1. [LEMNA: Explaining Deep Learning based Security Applications (CCS '18)](http://people.cs.vt.edu/gangwang/ccs18.pdf)
+
+   基于模型可解释性的安全分析
+
 ## 3.模型/数据隐私
 
 * __Model Inversion__: 窃取隐私数据
@@ -218,11 +223,29 @@
 
 ## 4.模型水印/后门
 
-1. [
+1. [BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain](https://arxiv.org/pdf/1708.06733.pdf)
+
+   提出了网络模型后门的概念
+
+1. [Embedding Watermarks into Deep Neural Networks](https://arxiv.org/pdf/1701.04082.pdf)
+
+   模型水印的早期工作
+
+1. [Trojaning Attack on Neural Networks (NDSS '18)](https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=2782&context=cstech)
+
+   并不是添加任意trigger，提出了削弱特定神经元最大激活值的trigger生成方式
 
 1. [Protecting Intellectual Property of Deep Neural Networks with Watermarking (ASIACCS '18)](https://gzs715.github.io/pubs/WATERMARK_ASIACCS18.pdf)
 
+   提出了三种添加模型水印的算法
+
 1. [Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring (USENIX Security '18)](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf) :star:
+
+   注意文章中对于watermark特性的定义，值得好好学习
+
+1. [Neural Cleanse: Identifying and Mitigating Backdoor Attacks in Neural Networks (IEEE S&P '19)](https://www.computer.org/csdl/proceedings-article/sp/2019/666000a530/19skfH8dcqc)
+
+   提出了深度神经网络模型后门检测和去除方法(示例给的是CNN)
 
 
 ## 5.模型安全测试
@@ -259,6 +282,8 @@
    基于模糊测试的神经网络调试方法，发现神经网络中的数值计算错误
    
 ## 6.智能系统安全问题
+
+### 概述性文章
 1. [SoK: Security and Privacy in Machine Learning (IEEE EuroS&P '18)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8406613) :star: :star:
 
    系统性地介绍了机器学习中的安全与隐私问题(SoK:Systematization of Knowledge)，强烈推荐！
@@ -266,6 +291,28 @@
 1. [A Berkeley View of Systems Challenges for AI](https://arxiv.org/abs/1712.05855) :star:
 
    Berkeley关于AI系统应用问题的白皮书
+
+### 语音识别攻击
+
+1. [DolphinAttack: Inaudible Voice Commands (CCS '17 Best Paper)](https://acmccs.github.io/papers/p103-zhangAemb.pdf)
+
+   利用超声频段传播语音指令，使人无法察觉
+
+1. [CommanderSong: A Systematic Approach for Practical Adversarial Voice Recognition (USENIX Security '18)](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-yuan.pdf)
+
+   将攻击扰动隐藏到音乐中，可以经过物理信道进行攻击(play over the air)
+
+1. [Practical Hidden Voice Attacks against Speech and Speaker Recognition Systems (NDSS '19)](https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_08-1_Abdullah_paper.pdf) :star:
+
+   对黑盒语音系统的攻击，其中利用到了信号处理的一些特性。在真实语音识别应用中，对Over-the-Air和Over-the-Line两种攻击场景都进行了测试。
+
+1. [Adversarial Attacks Against Automatic Speech Recognition Systems via Psychoacoustic Hiding (NDSS '19)](https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_08-2_Schonherr_paper.pdf)
+
+   欺骗人的听觉感知机制的语音对抗样本(注意不同于DolphinAttack)
+
+1. [Characterizing Audio Adversarial Examples Using Temporal Dependency](https://arxiv.org/pdf/1809.10875.pdf)
+
+   包含对几种语音攻击方法进行了分析
 
 ## 7.样本生成/检测
 1. [Generative Adversarial Nets](http://202.117.4.101/cache/1/03/papers.nips.cc/c9eaa01bb80324b24e05e5a696fa4ab0/5423-generative-adversarial-nets.pdf) :star:
@@ -321,4 +368,5 @@
 
    视频换脸项目
 
-## 8.人机交互分析
+## 8.人机交互行为
+   (正在添加中...)
