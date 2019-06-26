@@ -87,3 +87,11 @@
 * [MXNet: A Flexible and Efficient Machine Learning Library for Heterogeneous Distributed Systems](https://www.cs.cmu.edu/~muli/file/mxnet-learning-sys.pdf) 
 
   MXNet的设计文章
+
+## 推荐浏览的博客
+* [Google AI Blog](https://ai.googleblog.com/) :star:
+* [Open AI Blog](https://openai.com/blog/)
+* [Microsoft AI Blog](https://blogs.microsoft.com/ai/)
+* [Facebook AI Blog](https://ai.facebook.com/blog/)
+* [Uber Engineering Blog](https://eng.uber.com/)
+* [BAIR Blog (Berkeley AI Research)](https://bair.berkeley.edu/blog/)
