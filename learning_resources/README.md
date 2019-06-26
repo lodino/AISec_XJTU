@@ -1,4 +1,4 @@
-该目录下是一些推荐给小组成员的学习资料 
+# 该目录下是一些推荐给小组成员的学习资料 
 ----
 
 （:star: 标记为强烈推荐学习的材料。以下的这些资料不可能（也没必要）短时间内全部看完，先挑重点学习。）
@@ -80,3 +80,10 @@
 
   一本经典的学习资料，侧重于从贝叶斯学派角度解释机器学习理论。Self-contained，碰到不会的理论，基本都能从附录中都找到答案。（阅读会花挺多时间的，如果暂时没有深入从事机器学习工作计划的同学，可以先把这本资料的阅读放一放）
 
+* [TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://download.tensorflow.org/paper/whitepaper2015.pdf) :star:
+
+  Tensorflow白皮书，讲述了Tensorflow的主要涉及思路可以帮助理解一些tensorflow的功能特性
+
+* [MXNet: A Flexible and Efficient Machine Learning Library for Heterogeneous Distributed Systems](https://www.cs.cmu.edu/~muli/file/mxnet-learning-sys.pdf) 
+
+  MXNet的设计文章
