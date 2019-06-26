@@ -82,7 +82,7 @@
 
 * [TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://download.tensorflow.org/paper/whitepaper2015.pdf) :star:
 
-  Tensorflow白皮书，讲述了Tensorflow的主要设计思路可以帮助理解一些tensorflow的功能特性
+  Tensorflow白皮书，讲述了Tensorflow的主要设计思路，可以帮助理解一些tensorflow的功能特性
 
 * [MXNet: A Flexible and Efficient Machine Learning Library for Heterogeneous Distributed Systems](https://www.cs.cmu.edu/~muli/file/mxnet-learning-sys.pdf) 
 
