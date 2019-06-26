@@ -1,10 +1,10 @@
 # 该目录下是推荐给小组成员的阅读资料
-  (请各位成员根据自己方向学习，:star:为强烈推荐阅读的资料)
+  (请各位成员根据自己的研究方向和兴趣点学习，:star:为推荐优先阅读的资料)
 
 ## 1.对抗样本攻/防
 （对抗样本攻/防方向对应的文章很多，该列表覆盖内容极其有限）
 
-###攻击
+### 攻击
 
 1. [Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199) :star: 
 
@@ -189,15 +189,26 @@
    欺骗模型解释方法的对抗样本
 ## 3.模型/数据隐私
 
-1. [Stealing Machine Learning Models via Prediction APIs (USENIX Security '16](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf)
+* __Model Inversion__: 窃取隐私数据
+* __Model Extraction__: 窃取模型参数
+
+1. [Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures (CCS '15)](https://www.cs.cmu.edu/~mfredrik/papers/fjr2015ccs.pdf) :star:
+
+   展示了如何推测用户隐私信息(decision tree)，复原人脸训练数据(neural network)
+
+1. [Membership Inference Attacks Against Machine Learning Models (IEEE S&P '17)](https://www.cs.cornell.edu/~shmat/shmat_oak17.pdf) :star:
+
+   利用训练一系列shadow model进行成员推测攻击(Membership Inference Attack)
+
+1. [Stealing Machine Learning Models via Prediction APIs (USENIX Security '16)](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf) :star:
 
    通过发送轮询数据可以推测模型参数，实现模型的窃取
 
-1. [Stealing Hyperparameters in Machine Learning (IEEE S&P '18)](https://ieeexplore.ieee.org/abstract/document/8418595)
+1. [Stealing Hyperparameters in Machine Learning (IEEE S&P '18)](https://ieeexplore.ieee.org/abstract/document/8418595) :star:
 
    偷取模型训练时的超参数
 
-1. [The Secret Sharer: Evaluating and Testing Unintended Memorization in Neural Networks (USENIX Security '19)](https://arxiv.org/pdf/1802.08232.pdf)
+1. [The Secret Sharer: Evaluating and Testing Unintended Memorization in Neural Networks (USENIX Security '19)](https://arxiv.org/pdf/1802.08232.pdf) :star:
 
    生成序列模型会泄露训练数据信息
 
@@ -206,11 +217,51 @@
    针对强化学习模型的隐私窃取
 
 ## 4.模型水印/后门
-## 5.模型安全测试
-## 6.智能系统安全问题
-1. [SoK: Security and Privacy in Machine Learning (IEEE EuroS&P '18)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8406613) :star:
 
-   系统性地介绍了机器学习中的安全与隐私问题(SoK:Systematization of Knowledge)
+1. [
+
+1. [Protecting Intellectual Property of Deep Neural Networks with Watermarking (ASIACCS '18)](https://gzs715.github.io/pubs/WATERMARK_ASIACCS18.pdf)
+
+1. [Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring (USENIX Security '18)](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf) :star:
+
+
+## 5.模型安全测试
+1. [DeepXplore: Automated Whitebox Testing of Deep Learning Systems SOSP '17 Best Paper](https://arxiv.org/pdf/1705.06640) :star:
+
+   借鉴了软件测试中模糊测试的概念，提出了神经元覆盖率引导的深度学习系统测试框架（白盒）
+
+1. [DeepGauge: multi-granularity testing criteria for deep learning systems ASE '18](https://arxiv.org/pdf/1803.07519.pdf)
+
+   应该是借鉴了DeepXplore的思想，对神经元覆盖率等指标进行了细化
+
+1. [Testing deep neural networks](https://arxiv.org/pdf/1803.04792.pdf)
+
+   受软件测试覆盖率指标启发，该文章提出了4种测试指标（白盒）
+
+1. [DeepCT: Tomographic Combinatorial Testing for Deep Learning Systems (SANER '19)](https://ieeexplore.ieee.org/document/8668044)
+
+   借鉴了软件测试中的组合测试概念
+
+1. [Deepmutation: Mutation testing of deep learning systems (ISSRE '18)](https://arxiv.org/abs/1805.05206)
+
+   借鉴了软件测试中的变异测试概念
+
+1. [Formal Security Analysis of Neural Networks using Symbolic Intervals (USENIX Security '18)](http://www.cs.columbia.edu/~suman/docs/reluval.pdf)
+
+   关于模型输出安全范围的形式化分析（借鉴了符号执行？）
+
+1. [Concolic Testing for Deep Neural Networks (ASE '18)](http://www.kroening.com/papers/ase2018.pdf)
+
+   借鉴了符号执行中的Concolic Execution
+
+1. [TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing](https://arxiv.org/pdf/1807.10875.pdf)
+
+   基于模糊测试的神经网络调试方法，发现神经网络中的数值计算错误
+   
+## 6.智能系统安全问题
+1. [SoK: Security and Privacy in Machine Learning (IEEE EuroS&P '18)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8406613) :star: :star:
+
+   系统性地介绍了机器学习中的安全与隐私问题(SoK:Systematization of Knowledge)，强烈推荐！
 
 1. [A Berkeley View of Systems Challenges for AI](https://arxiv.org/abs/1712.05855) :star:
 
@@ -220,5 +271,54 @@
 1. [Generative Adversarial Nets](http://202.117.4.101/cache/1/03/papers.nips.cc/c9eaa01bb80324b24e05e5a696fa4ab0/5423-generative-adversarial-nets.pdf) :star:
    
    Goodfellow等提出的GAN模型 
+
+1. [生成式对抗网络GAN的研究进展与展望](http://www.aas.net.cn/CN/abstract/abstract19012.shtml)
+
+   中文GAN综述
+
+1. [Autoencoders, Unsupervised Learning, and Deep Architectures](http://proceedings.mlr.press/v27/baldi12a/baldi12a.pdf)
+
+   Autoencoder学习资料
+
+1. [Slides--Unsupervised Learning: Autoencoders by Yunsheng Bai](http://yunshengb.com/wp-content/uploads/2018/04/0412018_unsupervised_learning_autoencoders.pdf) :star:
+
+   不错的Autoencoder模型回顾
+
+1. [Face2Face: Real-Time Face Capture and Reenactment of RGB Videos (CVPR 2016)](https://ieeexplore.ieee.org/document/7780631) :star:
+
+   视频换脸
+
+1. [Synthesizing Obama: learning lip sync from audio](https://grail.cs.washington.edu/projects/AudioToObama/siggraph17_obama.pdf) :star:
+
+   生成虚假的奥巴马讲话视频(主要生成唇部动作)
+
+1. [Exposing Deep Fakes Using Inconsistent Head Poses](https://ieeexplore.ieee.org/abstract/document/8683164)
+
+   基于头部姿态检测Deepfake
+
+1. [In Ictu Oculi: Exposing AI Created Fake Videos by Detecting Eye Blinking](https://www.albany.edu/faculty/mchang2/files/2018_12_WIFS_EyeBlink_FakeVideos.pdf)
+
+   LSTM+CNN检测眨眼
+
+1. [Exposing DeepFake Videos By Detecting Face Warping Artifacts](https://arxiv.org/abs/1811.00656)
+
+   利用CNN检测Deepfake
+
+1. [MesoNet: a Compact Facial Video Forgery Detection Network](https://ieeexplore.ieee.org/abstract/document/8630761)
+
+   利用CNN检测Deepfake
+
+1. [Deepfake Video Detection Using Recurrent Neural Networks](https://ieeexplore.ieee.org/abstract/document/8639163)
+
+   利用RNN检测Deepfake
+
+1. [ON THE GENERALIZATION OF GAN IMAGE FORENSICS](https://arxiv.org/pdf/1902.11153.pdf)
+
+   CNN检测虚假图片
+(还有类似的工作就不一一列出了，基于CNN/RNN方法的一个主要问题是:如果虚假样本生成方法未知，或者攻击者已知模型检测方法，这些提出的方法还是否奏效？)
+   
+1. [FaceSwap-GitHub](https://github.com/deepfakes/faceswap)
+
+   视频换脸项目
 
 ## 8.人机交互分析
