@@ -249,11 +249,11 @@
 
 
 ## 5.模型安全测试
-1. [DeepXplore: Automated Whitebox Testing of Deep Learning Systems SOSP '17 Best Paper](https://arxiv.org/pdf/1705.06640) :star:
+1. [DeepXplore: Automated Whitebox Testing of Deep Learning Systems (SOSP '17 Best Paper)](https://arxiv.org/pdf/1705.06640) :star:
 
    借鉴了软件测试中模糊测试的概念，提出了神经元覆盖率引导的深度学习系统测试框架（白盒）
 
-1. [DeepGauge: multi-granularity testing criteria for deep learning systems ASE '18](https://arxiv.org/pdf/1803.07519.pdf)
+1. [DeepGauge: multi-granularity testing criteria for deep learning systems (ASE '18)](https://arxiv.org/pdf/1803.07519.pdf)
 
    应该是借鉴了DeepXplore的思想，对神经元覆盖率等指标进行了细化
 
@@ -363,6 +363,10 @@
 
    CNN检测虚假图片
 (还有类似的工作就不一一列出了，基于CNN/RNN方法的一个主要问题是:如果虚假样本生成方法未知，或者攻击者已知模型检测方法，这些提出的方法还是否奏效？)
+
+1. [Protecting World Leaders Against Deep Fakes (CVPR Workshops 2019)](http://202.117.4.101/cache/4/03/openaccess.thecvf.com/1061984c4cca6e3b3df8d5e2f50b6803/Agarwal_Protecting_World_Leaders_Against_Deep_Fakes_CVPRW_2019_paper.pdf)
+
+   基于面部关键部位检测
    
 1. [FaceSwap-GitHub](https://github.com/deepfakes/faceswap)
 
