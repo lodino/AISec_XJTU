@@ -205,6 +205,10 @@
 
    利用训练一系列shadow model进行成员推测攻击(Membership Inference Attack)
 
+1. [ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models (NDSS '19)](https://arxiv.org/pdf/1806.01246.pdf)
+
+   放松了之前文章中的两个关键假设：拥有shadow models以及与目标模型训练数据同分布的数据集，提出了跨域攻击
+
 1. [Stealing Machine Learning Models via Prediction APIs (USENIX Security '16)](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf) :star:
 
    通过发送轮询数据可以推测模型参数，实现模型的窃取
