@@ -4,6 +4,10 @@
 ## 1.对抗样本攻/防
 （对抗样本攻/防方向对应的文章很多，该列表覆盖内容极其有限）
 
+* [A Complete List of All (arXiv) Adversarial Example Papers by Nicholas Carlini](https://nicholas.carlini.com/writing/2019/all-adversarial-example-papers.html) :star: :star:
+
+   大牛整理的对抗样本相关研究，超级超级详尽，膜拜...
+
 ### 攻击
 
 1. [Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199) :star: 
@@ -134,6 +138,9 @@
 
 1. [On Evaluating Adversarial Robustness](https://arxiv.org/abs/1902.06705) :star:
 
+1. [DLS 2019 Keynote: Making and Measuring Progress in Adversarial Machine Learning by Nicolas Carlini](https://www.ieee-security.org/TC/SPW2019/DLS/doc/K1-Carlini.pdf) :star:
+
+   阐述了对抗机器学习的评估问题，不知道以后会不会有相应的Keynote视频放出
    当前的模型鲁棒性评估方法是否可信？目前许多防御方法的评估过程是否合理？我们是否接近模型鲁棒性的下界？
    该文章对此进行了很好的讨论，而且该文章还在不断更新和完善中
 
