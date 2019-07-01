@@ -303,6 +303,10 @@
 
    Berkeley关于AI系统应用问题的白皮书
 
+1. [Attacking Machine Learning: On the _Security_ and _Privacy_ of Neural Networks -- RSAConference2019 Slides by Nicolas Carlini](https://nicholas.carlini.com/slides/2019_rsa_attacking_ml.pdf) :star:
+
+   对于神经网络模型安全和隐私问题的介绍
+
 ### 语音识别攻击
 
 1. [DolphinAttack: Inaudible Voice Commands (CCS '17 Best Paper)](https://acmccs.github.io/papers/p103-zhangAemb.pdf)
@@ -385,3 +389,45 @@
 
 ## 8.人机交互行为
    (正在添加中...)
+### 研究综述
+1. [Authentication of Smartphone Users Using Behavioral Biometrics](https://ieeexplore.ieee.org/document/7423666) :star:
+
+   关于手机行为认证的研究综述
+
+1. [Surveying the Development of Biometric User Authentication on Mobile Phones](https://ieeexplore.ieee.org/document/7000543) :star:
+
+   关于手机生物认证的研究综述
+
+1. [Continuous User Authentication on Mobile Devices: Recent progress and remaining challenges](https://ieeexplore.ieee.org/document/7503170) :star:
+
+   关于手机持续认证的综述(Figure 2.关注一下)
+
+1. [Security: Active Authentication](https://ieeexplore.ieee.org/abstract/document/6585340)
+
+   由DARPA的研究人员撰写的主动认证文章
+
+### Keystroke Dynamics
+__基于物理键盘__
+1. [Advanced user authentication for mobile devices](https://dl.acm.org/citation.cfm?id=2639637)
+
+__基于软键盘/虚拟键盘__
+### Touch Dynamics
+1. [Touch-interaction behavior for continuous user authentication on smartphones](https://ieeexplore.ieee.org/abstract/document/7139046)
+
+1. [TouchIn: Sightless two-factor authentication on multi-touch mobile devices](https://ieeexplore.ieee.org/document/6997513)
+   
+
+### Motion Sensor
+### Touchscreen
+1. [Towards Continuous and Passive Authentication via Touch Biometrics: An Experimental Study on Smartphones (SOUPS '14)](https://www.usenix.org/system/files/conference/soups2014/soups14-paper-xu.pdf) :star:
+
+    Touch Operations: keystroke, slide, pinch, handwriting
+
+1. [Touch Gesture-Based Active User Authentication Using Dictionaries](https://ieeexplore.ieee.org/document/7045889)
+
+1. [Benchmarking Touchscreen Biometrics for Mobile Authentication (IEEE-TIFS)](https://ieeexplore.ieee.org/document/8353868)
+
+1. [Multi-touch Authentication Using Hand Geometry and Behavioral Information (IEEE S&P '17)](https://ieeexplore.ieee.org/document/7958587) :star:
+   考虑到了掌形特征和触屏行为特征（161名用户，数据集相对于同类研究来说规模较大）
+
+### Evaluation
