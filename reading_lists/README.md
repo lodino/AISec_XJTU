@@ -346,6 +346,10 @@
 
    不错的Autoencoder模型回顾
 
+1. [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/pdf/1703.10593.pdf)
+
+   针对GAN的"配对的"数据集不多提出的非监督学习方法: CycleGAN, 建立了很好的跨域映射
+
 1. [Face2Face: Real-Time Face Capture and Reenactment of RGB Videos (CVPR 2016)](https://ieeexplore.ieee.org/document/7780631) :star:
 
    视频换脸
@@ -386,6 +390,10 @@
 1. [FaceSwap-GitHub](https://github.com/deepfakes/faceswap)
 
    视频换脸项目
+   
+1. [FaceForensics-GitHub](https://github.com/ondyari/FaceForensics) :star:
+
+   换脸视频数据集(manipulation分别用了Deepfakes, Face2Face和FaceSwap), 以及团队使用的不同检测方法的效果对比 ([paper](https://arxiv.org/pdf/1901.08971.pdf), [benchmark](http://kaldir.vc.in.tum.de/faceforensics_benchmark/))
 
 ## 8.人机交互行为
    (正在添加中...)
@@ -431,3 +439,36 @@ __基于软键盘/虚拟键盘__
    考虑到了掌形特征和触屏行为特征（161名用户，数据集相对于同类研究来说规模较大）
 
 ### Evaluation
+
+## 9.相机型号识别
+
+### 传统方法
+
+1. [Digital Camera Identification From Sensor Pattern Noise](https://ieeexplore.ieee.org/document/1634362)
+
+    提出根据传感器差异产生的不同的PRNU可以进行型号识别, 采用correlation为统计量
+
+1. [Using sensor pattern noise for camera model identification](https://ieeexplore.ieee.org/abstract/document/4712000) :star:
+
+    基于不同相机的不同噪声(PRNU)生成对应的fingerprint, 基于fingerprint提取28个不同的特征, PCA降维, 喂入SVM, 最后采用集成学习
+
+1. [IDENTIFYING COMMON SOURCE DIGITAL CAMERA FROM IMAGE PAIRS](https://projet.liris.cnrs.fr/imagine/pub/proceedings/ICIP-2007/pdfs/0600125.pdf)
+
+    在噪声的分析部分有较为详细的阐述
+
+1. [On the practical aspects of applying the PRNU approach to device identification tasks](https://www.researchgate.net/publication/282869085_On_the_practical_aspects_of_applying_the_PRNU_approach_to_device_identification_tasks) :star:
+
+    提出以PCE为统计量 (比correlation更稳定), 采用假设检验的方法
+
+1. [Large scale test of sensor fingerprint camera identification](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/7254/1/Large-scale-test-of-sensor-fingerprint-camera-identification/10.1117/12.805701.full?SSO=1) :star:
+
+    理论与上一篇基本一致 (建议先阅读上一篇, 在理论部分更容易理解), 有在大规模数据集上实施的细节以及更为详尽的error analysis
+
+### 结合深度学习方法
+1. [Camera Model Identification Using Convolutional Neural Networks](https://ieeexplore.ieee.org/abstract/document/4712000)
+
+    把图像裁剪成patches并进行预处理, 之后喂入DenseNet
+    
+1. [IEEE's Signal Processing Society - Camera Model Identification](https://www.kaggle.com/c/sp-society-camera-model-identification/)
+
+    kaggle上的相机型号识别竞赛, 提供了约11GB的数据集
